@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "dependencies": {
     "vue": "^3.5.18"
   },
