@@ -2,6 +2,11 @@
 
 A simple but complete authentication system built with **FastAPI** (backend) and **Vue.js** (frontend).
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) 
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-teal?logo=fastapi) 
+![Vue.js](https://img.shields.io/badge/Vue.js-3-green?logo=vue.js) 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql) 
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 ---
 
 ## 🚀 Quick Start
@@ -20,7 +25,7 @@ A simple but complete authentication system built with **FastAPI** (backend) and
    .\run_backend.bat
 ```
 2. **Start Frontend** (Terminal 2):
-```bash
+    ```bash
     .\run_frontend.ps1
 ```
 
@@ -45,6 +50,7 @@ npm run dev
 
 ### Test Credentials
 Email: user@test.com
+
 Password: Test123
 
 ## 📁 Project Structure
@@ -76,20 +82,19 @@ Database: PostgreSQL
 Authentication: bcrypt password hashing
 
 ### 📡 API Endpoints
-POST /registration/
+### POST /registration/
+
 Register a new user account.
 
 Request: FormData with email, password
+
 Response: JSON with success or error message
 
-POST /login/
+### POST /login/
+
 Authenticate an existing user.
 
-Request: FormData with email, password
-Response: JSON with success or error message
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) 
-![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-teal?logo=fastapi) 
-![Vue.js](https://img.shields.io/badge/Vue.js-3-green?logo=vue.js) 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql) 
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+Request: FormData with email, password
+
+Response: JSON with success or error message
