@@ -1,0 +1,9 @@
+#requirements
+fastapi
+uvicorn
+pydantic
+typing
+psycopg2-binary
+email-validator
+python-multipart
+bcrypt
