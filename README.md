@@ -21,11 +21,12 @@ A simple but complete authentication system built with **FastAPI** (backend) and
 ### Running the Application
 
 1. **Start Backend** (Terminal 1):
-   ```bash
+```bash
    .\run_backend.bat
 ```
+
 2. **Start Frontend** (Terminal 2):
-    ```bash
+```bash
     .\run_frontend.ps1
 ```
 
@@ -81,7 +82,7 @@ Database: PostgreSQL
 
 Authentication: bcrypt password hashing
 
-### 📡 API Endpoints
+## API Endpoints
 ### POST /registration/
 
 Register a new user account.
