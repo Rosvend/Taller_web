@@ -1,4 +1,3 @@
-
 # Taller Web - Authentication System
 
 A simple but complete authentication system built with **FastAPI** (backend) and **Vue.js** (frontend).
@@ -19,23 +18,22 @@ A simple but complete authentication system built with **FastAPI** (backend) and
 1. **Start Backend** (Terminal 1):
    ```bash
    .\run_backend.bat
-````
+Start Frontend (Terminal 2):
 
-2. **Start Frontend** (Terminal 2):
+bash
+Copy code
+.\run_frontend.ps1
+Access the Application:
 
-   ```bash
-   .\run_frontend.ps1
-   ```
+Frontend: http://localhost:5173
 
-3. **Access the Application**:
+Backend API: http://localhost:8000
 
-   * Frontend: [http://localhost:5173](http://localhost:5173)
-   * Backend API: [http://localhost:8000](http://localhost:8000)
-   * API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+API Docs: http://localhost:8000/docs
 
-#### Alternative manual startup
-
-```bash
+Alternative manual startup
+bash
+Copy code
 # Backend
 cd backend
 uvicorn main:app --reload
@@ -43,20 +41,14 @@ uvicorn main:app --reload
 # Frontend
 cd frontend
 npm run dev
-```
+🔑 Test Credentials
+Email: user@test.com
 
----
+Password: Test123
 
-## 🔑 Test Credentials
-
-* **Email**: `user@test.com`
-* **Password**: `Test123`
-
----
-
-## 📁 Project Structure
-
-```bash
+📁 Project Structure
+bash
+Copy code
 Taller_web/
 ├── backend/
 │   ├── main.py           # FastAPI application
@@ -73,38 +65,126 @@ Taller_web/
 ├── requirements.txt      # Python dependencies
 ├── run_backend.bat       # Backend startup script (Windows)
 └── run_frontend.ps1      # Frontend startup script (Windows)
-```
+🛠️ Technical Stack
+Backend: FastAPI, PostgreSQL, bcrypt, Pydantic
 
----
+Frontend: Vue.js 3, Vite, HTML5, CSS3
 
-## 🛠️ Technical Stack
+Database: PostgreSQL
 
-* **Backend**: FastAPI, PostgreSQL, bcrypt, Pydantic
-* **Frontend**: Vue.js 3, Vite, HTML5, CSS3
-* **Database**: PostgreSQL
-* **Authentication**: bcrypt password hashing
+Authentication: bcrypt password hashing
 
----
-
-## 📡 API Endpoints
-
-### `POST /registration/`
-
+📡 API Endpoints
+POST /registration/
 Register a new user account.
 
-**Request**: FormData with `email`, `password`
-**Response**: JSON with success or error message
+Request: FormData with email, password
+Response: JSON with success or error message
+
+POST /login/
+Authenticate an existing user.
+
+Request: FormData with email, password
+Response: JSON with success or error message
+
+yaml
+Copy code
 
 ---
 
-### `POST /login/`
+### 🔹 Professional Version with Badges
+```markdown
+# Taller Web - Authentication System
 
+A simple but complete authentication system built with **FastAPI** (backend) and **Vue.js** (frontend).
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) 
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-teal?logo=fastapi) 
+![Vue.js](https://img.shields.io/badge/Vue.js-3-green?logo=vue.js) 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql) 
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- **Python 3.8+** installed  
+- **Node.js 16+** installed  
+- **PostgreSQL** running locally or remotely  
+
+---
+
+### Running the Application
+
+1. **Start Backend** (Terminal 1):
+   ```bash
+   .\run_backend.bat
+Start Frontend (Terminal 2):
+
+bash
+Copy code
+.\run_frontend.ps1
+Access the Application:
+
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:8000
+
+API Docs: http://localhost:8000/docs
+
+Alternative manual startup
+bash
+Copy code
+# Backend
+cd backend
+uvicorn main:app --reload
+
+# Frontend
+cd frontend
+npm run dev
+🔑 Test Credentials
+Email: user@test.com
+
+Password: Test123
+
+📁 Project Structure
+bash
+Copy code
+Taller_web/
+├── backend/
+│   ├── main.py           # FastAPI application
+│   ├── models.py         # Pydantic models
+│   ├── middleware.py     # CORS configuration
+│   ├── encryption.py     # Password hashing utilities
+│   └── database.sql      # Database schema
+├── frontend/
+│   ├── src/
+│   │   ├── App.vue       # Main Vue component
+│   │   └── style.css     # Global styles
+│   ├── package.json      # Node.js dependencies
+│   └── vite.config.js    # Vite configuration
+├── requirements.txt      # Python dependencies
+├── run_backend.bat       # Backend startup script (Windows)
+└── run_frontend.ps1      # Frontend startup script (Windows)
+🛠️ Technical Stack
+Backend: FastAPI, PostgreSQL, bcrypt, Pydantic
+
+Frontend: Vue.js 3, Vite, HTML5, CSS3
+
+Database: PostgreSQL
+
+Authentication: bcrypt password hashing
+
+📡 API Endpoints
+POST /registration/
+Register a new user account.
+
+Request: FormData with email, password
+Response: JSON with success or error message
+
+POST /login/
 Authenticate an existing user.
 
-**Request**: FormData with `email`, `password`
-**Response**: JSON with success or error message
-
-```
-
-Would you like me to add **badges** (Python, Vue, PostgreSQL, License, etc.) at the top so your GitHub looks even more professional, or keep it minimal?
-```
+Request: FormData with email, password
+Response: JSON with success or error message
