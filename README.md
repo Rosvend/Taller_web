@@ -1,3 +1,4 @@
+
 # Taller Web - Authentication System
 
 A simple but complete authentication system built with **FastAPI** (backend) and **Vue.js** (frontend).
@@ -18,22 +19,23 @@ A simple but complete authentication system built with **FastAPI** (backend) and
 1. **Start Backend** (Terminal 1):
    ```bash
    .\run_backend.bat
-Start Frontend (Terminal 2):
+````
 
-bash
-Copy code
-.\run_frontend.ps1
-Access the Application:
+2. **Start Frontend** (Terminal 2):
 
-Frontend: http://localhost:5173
+   ```bash
+   .\run_frontend.ps1
+   ```
 
-Backend API: http://localhost:8000
+3. **Access the Application**:
 
-API Docs: http://localhost:8000/docs
+   * Frontend: [http://localhost:5173](http://localhost:5173)
+   * Backend API: [http://localhost:8000](http://localhost:8000)
+   * API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-Alternative manual startup
-bash
-Copy code
+#### Alternative manual startup
+
+```bash
 # Backend
 cd backend
 uvicorn main:app --reload
@@ -41,14 +43,20 @@ uvicorn main:app --reload
 # Frontend
 cd frontend
 npm run dev
-🔑 Test Credentials
-Email: user@test.com
+```
 
-Password: Test123
+---
 
-📁 Project Structure
-bash
-Copy code
+## 🔑 Test Credentials
+
+* **Email**: `user@test.com`
+* **Password**: `Test123`
+
+---
+
+## 📁 Project Structure
+
+```bash
 Taller_web/
 ├── backend/
 │   ├── main.py           # FastAPI application
@@ -65,24 +73,38 @@ Taller_web/
 ├── requirements.txt      # Python dependencies
 ├── run_backend.bat       # Backend startup script (Windows)
 └── run_frontend.ps1      # Frontend startup script (Windows)
-🛠️ Technical Stack
-Backend: FastAPI, PostgreSQL, bcrypt, Pydantic
+```
 
-Frontend: Vue.js 3, Vite, HTML5, CSS3
+---
 
-Database: PostgreSQL
+## 🛠️ Technical Stack
 
-Authentication: bcrypt password hashing
+* **Backend**: FastAPI, PostgreSQL, bcrypt, Pydantic
+* **Frontend**: Vue.js 3, Vite, HTML5, CSS3
+* **Database**: PostgreSQL
+* **Authentication**: bcrypt password hashing
 
-📡 API Endpoints
-POST /registration/
+---
+
+## 📡 API Endpoints
+
+### `POST /registration/`
+
 Register a new user account.
 
-Request: FormData with email, password
-Response: JSON with success or error message
+**Request**: FormData with `email`, `password`
+**Response**: JSON with success or error message
 
-POST /login/
+---
+
+### `POST /login/`
+
 Authenticate an existing user.
 
-Request: FormData with email, password
-Response: JSON with success or error message
+**Request**: FormData with `email`, `password`
+**Response**: JSON with success or error message
+
+```
+
+Would you like me to add **badges** (Python, Vue, PostgreSQL, License, etc.) at the top so your GitHub looks even more professional, or keep it minimal?
+```
