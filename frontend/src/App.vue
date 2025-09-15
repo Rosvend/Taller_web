@@ -139,7 +139,9 @@ const registerMessage = ref("")
 const registerMessageType = ref("")
 const registerLoading = ref(false)
 
-const API_URL = "http://localhost:8000"
+const API_URL = import.meta.env.PROD 
+  ? "https://your-backend-url.com"  // Replace with your actual backend URL when deployed
+  : "http://localhost:8000"
 
 // Computed properties
 const isValidPassword = computed(() => {
