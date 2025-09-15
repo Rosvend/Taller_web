@@ -1,50 +1,54 @@
 # Taller Web - Authentication System
 
-A complete web authentication system built with FastAPI (backend) and Vue.js (frontend).
+A simple but complete authentication system built with **FastAPI** (backend) and **Vue.js** (frontend).
+
+---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+ installed
-- Node.js 16+ installed
-- PostgreSQL database running
+- **Python 3.8+** installed  
+- **Node.js 16+** installed  
+- **PostgreSQL** running locally or remotely  
+
+---
 
 ### Running the Application
 
 1. **Start Backend** (Terminal 1):
    ```bash
    .\run_backend.bat
-   ```
+Start Frontend (Terminal 2):
 
-2. **Start Frontend** (Terminal 2):
-   ```bash
-   .\run_frontend.ps1
-   ```
+bash
+Copy code
+.\run_frontend.ps1
+Access the Application:
 
-3. **Access the Application**:
-   - Frontend: http://localhost:5173
-   - Backend API: http://localhost:8000
-   - API Documentation: http://localhost:8000/docs
+Frontend: http://localhost:5173
 
-Alternatively, you can run it using:
-```
-#Backend
-cd backend 
+Backend API: http://localhost:8000
+
+API Docs: http://localhost:8000/docs
+
+Alternative manual startup
+bash
+Copy code
+# Backend
+cd backend
 uvicorn main:app --reload
-```
-#Frontend
+
+# Frontend
 cd frontend
 npm run dev
-```
+🔑 Test Credentials
+Email: user@test.com
 
-## Test Credentials
+Password: Test123
 
-- **Email**: user@test.com
-- **Password**: Test123
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
+bash
+Copy code
 Taller_web/
 ├── backend/
 │   ├── main.py           # FastAPI application
@@ -59,28 +63,26 @@ Taller_web/
 │   ├── package.json      # Node.js dependencies
 │   └── vite.config.js    # Vite configuration
 ├── requirements.txt      # Python dependencies
-├── run_backend.bat       # Backend startup script
-└── run_frontend.bat      # Frontend startup script
-```
+├── run_backend.bat       # Backend startup script (Windows)
+└── run_frontend.ps1      # Frontend startup script (Windows)
+🛠️ Technical Stack
+Backend: FastAPI, PostgreSQL, bcrypt, Pydantic
 
-## Technical Stack
+Frontend: Vue.js 3, Vite, HTML5, CSS3
 
-- **Backend**: FastAPI, PostgreSQL, bcrypt, Pydantic
-- **Frontend**: Vue.js 3, Vite, HTML5, CSS3
-- **Database**: PostgreSQL
-- **Authentication**: bcrypt password hashing
+Database: PostgreSQL
 
-## API Endpoints
+Authentication: bcrypt password hashing
 
-### POST /registration/
+📡 API Endpoints
+POST /registration/
 Register a new user account.
 
-**Request**: FormData with `email` and `password`
-**Response**: JSON with success/error message
+Request: FormData with email, password
+Response: JSON with success or error message
 
-### POST /login/
+POST /login/
 Authenticate an existing user.
 
-**Request**: FormData with `email` and `password`
-**Response**: JSON with success/error message
-
+Request: FormData with email, password
+Response: JSON with success or error message
