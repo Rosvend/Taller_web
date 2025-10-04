@@ -99,3 +99,4 @@ Authenticate an existing user.
 Request: FormData with email, password
 
 Response: JSON with success or error message
+Colaboradora: Susana Toro C. - Universidad Pontificia Bolivariana
