@@ -104,3 +104,7 @@ Colaboradora: Susana Toro C. - Universidad Pontificia Bolivariana
 ## Cambio desde la rama feature-cambio
 Este texto fue agregado como parte del taller de Git y GitHub.
 Aquí probamos cómo crear un fork, trabajar en una rama y mandar un Pull Request.
+
+## Cambios realizados por Paula Olier
+- Edición del archivo README.md
+- Prueba de sincronización con el fork
