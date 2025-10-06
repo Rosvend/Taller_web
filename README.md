@@ -101,11 +101,13 @@ Request: FormData with email, password
 Response: JSON with success or error message
 
 
-## commit desde fork 1
+## commit desde fork 1 susana toro  
 Colaboradora: Susana Toro C. - Universidad Pontificia Bolivariana
 
-## commit desde fork 2
+## commit desde fork 2 santiago jaramillo
 Este texto fue agregado como parte del taller de Git y GitHub.
 Aquí probamos cómo crear un fork, trabajar en una rama y mandar un Pull Request.
 
-## commit desde fork 
+## Cambios realizados por Paula Olier
+- Edición del archivo README.md
+- Prueba de sincronización con el fork
