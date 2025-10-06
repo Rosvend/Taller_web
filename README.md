@@ -99,8 +99,13 @@ Authenticate an existing user.
 Request: FormData with email, password
 
 Response: JSON with success or error message
+
+
+## commit desde fork 1
 Colaboradora: Susana Toro C. - Universidad Pontificia Bolivariana
 
-## Cambio desde la rama feature-cambio
+## commit desde fork 2
 Este texto fue agregado como parte del taller de Git y GitHub.
 Aquí probamos cómo crear un fork, trabajar en una rama y mandar un Pull Request.
+
+## commit desde fork 
